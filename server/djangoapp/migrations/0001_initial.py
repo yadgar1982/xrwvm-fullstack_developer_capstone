@@ -25,10 +25,10 @@ class Migration(migrations.Migration):
                     verbose_name='ID'
                 )
             ),
-    ('name', models.CharField(max_length=100)),
-    ('description', models.TextField()),
-    ('color', models.CharField(default='Black', max_length=50)),
-],
+            ('name', models.CharField(max_length=100)),
+            ('description', models.TextField()),
+            ('color', models.CharField(default='Black', max_length=50)),
+        ],
         ),
         migrations.CreateModel(
             name='CarModel',
