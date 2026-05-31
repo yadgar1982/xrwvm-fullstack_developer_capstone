@@ -16,19 +16,19 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CarMake',
             fields=[
-            (
-                'id',
-                models.BigAutoField(
-                    auto_created=True,
-                    primary_key=True,
-                    serialize=False,
-                    verbose_name='ID'
-                )
-            ),
-            ('name', models.CharField(max_length=100)),
-            ('description', models.TextField()),
-            ('color', models.CharField(default='Black', max_length=50)),
-        ],
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
+                ('name', models.CharField(max_length=100)),
+                ('description', models.TextField()),
+                ('color', models.CharField(default='Black', max_length=50)),
+            ],
         ),
         migrations.CreateModel(
             name='CarModel',
